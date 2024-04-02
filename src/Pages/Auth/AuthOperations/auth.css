@@ -1,0 +1,89 @@
+.form {
+  background-image: 
+  linear-gradient(110deg, white 0%, white 50%, transparent 50%),
+  url("../../../../form.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+.custom-form {
+  width: 50%;
+}
+
+.form-custom {
+  margin: 20px 0;
+  position: relative;
+}
+.form-custom label,
+.form-custom input {
+  display: block;
+}
+.form-custom label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: gray;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-custom input:placeholder-shown + label {
+  opacity: 0;
+  visibility: hidden;
+  top: 20px;
+}
+.form-custom input {
+  padding: 20px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  background-color: #fff;
+  width: 80%;
+  border-bottom: 3px solid transparent;
+  box-shadow: 0 0 5px rgb(153, 152, 152) inset;
+}
+.form-custom input:focus {
+  box-shadow: 0 0 5px rgb(153, 152, 152) inset;
+}
+.form-custom input:focus:valid {
+  border-bottom: 3px solid green;
+}
+.form-custom input:focus:not(:valid) {
+  border-bottom: 3px solid orangered;
+}
+
+
+@media (max-width: 992px) {
+  .form {
+    background-image: 
+    linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 100%),
+    url("../../../../form.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .custom-form {
+    width: 100%;
+  }
+  .form-custom input {
+    width: 100%;
+  }
+  .submit {
+    text-align: center;
+  }
+}
+

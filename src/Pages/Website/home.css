@@ -1,0 +1,35 @@
+.hand {
+  background-image: url("../../images/landing.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.custom-search{
+  color: rgba(0, 0, 0, 0.5);
+}
+.custom-search:focus {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1) !important;
+  border: rgba(0, 0, 0, 0.1) !important;
+  outline: rgba(0, 0, 0, 0.1) !important;
+}
+.profile-icon {
+  color: bisque;
+}
+.category {
+  /* width: 70px;
+  white-space: wrap;
+  text-overflow: ellipsis; */
+}
+.category-title {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.category-title:hover {
+  color: rgb(85, 85, 245) !important;
+}
+.categories {
+  background-color: rgb(58, 113, 176);
+}
